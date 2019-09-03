@@ -1,6 +1,6 @@
 FROM szymonm4/arm32v7-openjdk:8-jdk
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git curl zip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git curl zip unzip && rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
 ARG group=jenkins
